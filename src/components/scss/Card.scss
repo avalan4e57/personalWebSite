@@ -1,0 +1,68 @@
+.card {
+  // font-size: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  height: 44em;
+  max-width: 1300px;
+  border: 0.05em solid black;
+  border-radius: 5px;
+  margin: 0 0.5em;
+  padding: 1em;
+  // overflow: hidden;
+  & > * {
+    flex: 1 100%;
+  }
+
+  .image {
+    // height: 57.5%;
+    height: 23em;
+    img {
+      max-height: 100%;
+    }
+  }
+  .description {
+    height: 16.25em;
+    font-size: 1em;
+    line-height: 1.25;
+    // height: 37.5%;
+    overflow: hidden;
+    h2 {
+      font-size: 2em;
+      // line-height: 1;
+      margin: 0.625em auto;
+    }
+    p {
+      margin: 0;
+      // overflow: hidden;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .card {
+    height: 19em;
+    // margin: 0 auto;
+    .image {
+      flex-basis: 40%;
+      height: 15em;
+    }
+    .description {
+      text-align: left;
+      flex-basis: 60%;
+      height: 13.75em;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .card {
+    height: 16em;
+    .image {
+      height: 12em;
+    }
+    .description {
+      height: 11em;
+    }
+  }
+}
