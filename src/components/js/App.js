@@ -8,6 +8,7 @@ import Home from './Home.js'
 import Projects from './Projects.js'
 import Header from './Header.js'
 import Navigation from './Navigation.js'
+import data from './../../projectsData.json'
 
 class App extends Component {
   constructor() {
@@ -23,19 +24,30 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://api.punkapi.com/v2/beers/')
-      .then(resp => resp.json())
-      .then(data => {
-        let cards = data.map(item => ({
-            id: item.id,
-            image: item.image_url,
-            name: item.name,
-            description: item.description,
-            selected: false
-          })
-        )
-        this.setState({ cards: cards })
+    // fetch('https://api.punkapi.com/v2/beers/')
+    //   .then(resp => resp.json())
+    //   .then(data => {
+    //     let cards = data.map(item => ({
+    //         id: item.id,
+    //         image: item.image_url,
+    //         name: item.name,
+    //         description: item.description,
+    //         selected: false
+    //       })
+    //     )
+    //     this.setState({ cards: cards })
+    //   })
+    let cards = data.map(item => ({
+        id: item.id,
+        image: item.image,
+        name: item.name,
+        description: item.description,
+        github: item.github,
+        www: item.www
       })
+    )
+    this.setState({ cards: cards })
+    console.log(cards[0])
   }
 
   toggleSelect(id) {
@@ -76,8 +88,8 @@ class App extends Component {
           <Header />
           <Navigation />
 
-          <Route exact path='/' render={ () => <Home cards={ this.state.cards } /> } />
-          <Route path='/projects' render={ () => <Projects /> } />
+          <Route exact path='/' render={ () => <Home /> } />
+          <Route path='/projects' render={ () => <Projects cards={ this.state.cards } /> } />
         </div>
       </Router>
     )

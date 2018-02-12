@@ -10,12 +10,12 @@ class Main extends Component {
           this.props.cards.map((card, index) =>
             <div className={ styles.gridItem } key={ index }>
               <Card
-                symbol={ this.props.symbol }
-                type={ this.props.type }
                 id={ card.id }
                 name={ card.name }
                 image={ card.image }
                 description={ card.description }
+                github={ card.github }
+                www={ card.www }
               />
             </div>
           )

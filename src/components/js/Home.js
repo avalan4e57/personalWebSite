@@ -5,7 +5,6 @@ class Home extends Component {
     return(
       <div className='home'>
         <h1>Home</h1>
-        <Main cards={ this.props.cards } />
       </div>
     )
   }
