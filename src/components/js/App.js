@@ -8,7 +8,7 @@ import Home from './Home.js'
 import Projects from './Projects.js'
 import Header from './Header.js'
 import Navigation from './Navigation.js'
-import data from './../../projectsData.json'
+// import data from './../../projectsData.json'
 
 class App extends Component {
   constructor() {
