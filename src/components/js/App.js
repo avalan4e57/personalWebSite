@@ -24,30 +24,39 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // fetch('https://api.punkapi.com/v2/beers/')
-    //   .then(resp => resp.json())
-    //   .then(data => {
-    //     let cards = data.map(item => ({
-    //         id: item.id,
-    //         image: item.image_url,
-    //         name: item.name,
-    //         description: item.description,
-    //         selected: false
-    //       })
-    //     )
-    //     this.setState({ cards: cards })
-    //   })
-    let cards = data.map(item => ({
-        id: item.id,
-        image: item.image,
-        name: item.name,
-        description: item.description,
-        github: item.github,
-        www: item.www
+    fetch('https://igor-chernega.herokuapp.com/assets/projectsData.json')
+      .then(resp => resp.json())
+      .then(data => {
+        // let cards = data.map(item => ({
+        //     id: item.id,
+        //     image: item.image_url,
+        //     name: item.name,
+        //     description: item.description,
+        //     selected: false
+        //   })
+        // )
+        let cards = data.map(item => ({
+            id: item.id,
+            image: item.image,
+            name: item.name,
+            description: item.description,
+            github: item.github,
+            www: item.www
+          })
+        )
+        this.setState({ cards: cards })
       })
-    )
-    this.setState({ cards: cards })
-    console.log(cards[0])
+    // let cards = data.map(item => ({
+    //     id: item.id,
+    //     image: item.image,
+    //     name: item.name,
+    //     description: item.description,
+    //     github: item.github,
+    //     www: item.www
+    //   })
+    // )
+    // this.setState({ cards: cards })
+    // console.log(cards[0])
   }
 
   toggleSelect(id) {
