@@ -2,6 +2,14 @@ import React, { Component } from 'react'
 import Main from './Main.js'
 import data from './../../projectsData.json'
 
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('./../img/', false, /\.(png|jpe?g|svg)$/));
+
 class Projects extends Component {
   constructor() {
     super()
@@ -14,7 +22,7 @@ class Projects extends Component {
   componentDidMount() {
     let cards = data.map(item => ({
         id: item.id,
-        image: item.image,
+        image: '/assets/' + images[item.image],
         name: item.name,
         description: item.description,
         github: item.github,
@@ -28,7 +36,7 @@ class Projects extends Component {
     return(
       <div>
         <h1>My pet projects</h1>
-        <Main ccards={ this.state.cards } />
+        <Main cards={ this.state.cards } />
       </div>
     )
   }

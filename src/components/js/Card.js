@@ -4,7 +4,6 @@ import styles from './../scss/Card.scss'
 class Card extends Component {
   render() {
     let symbol = null
-    console.log(this.props)
     return(
       <div className={ styles.card }>
         <div className={ styles.image }>

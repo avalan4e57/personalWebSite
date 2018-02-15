@@ -10,6 +10,7 @@
   margin: 0 0.5em;
   padding: 1em;
   // overflow: hidden;
+  width: 100%;
   & > * {
     flex: 1 100%;
   }
@@ -17,7 +18,10 @@
   .refferences {
     height: 4.45em;
     // background-color: red;
-    margin: 0 auto;
+    // float: right;
+    // margin: 0 auto;
+    // display: flex;
+    // justify-content: flex-end;
     a {
       background-color: blue;
       color: white;
@@ -26,16 +30,22 @@
       line-height: 1.25;
       padding: 0.86em;
       width: 50%;
-      max-width: 175px;
+      // max-width: 175px;
       text-decoration: none;
     }
     .github {
-      background-color: grey;
-      float: left;
+      background-color: #25292E;
+      &:hover {
+        color: purple;
+        transition: color ease .5s;
+      }
     }
     .www {
-      background-color: green;
-      float: right;
+      background-color: #34A6C9;
+      &:hover {
+        color: purple;
+        transition: color ease .5s;
+      }
     }
   }
 
@@ -74,6 +84,9 @@
     .image {
       flex-basis: 40%;
       height: 12em;
+      img {
+        max-width: 100%;
+      }
     }
     .description {
       text-align: left;
