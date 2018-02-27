@@ -1,25 +1,29 @@
 import React, { Component } from 'react'
 import styles from './../scss/Card.scss'
+import PropTypes from 'prop-types'
 
-class Card extends Component {
-  render() {
-    let symbol = null
-    return(
-      <div className={ styles.card }>
-        <div className={ styles.image }>
-          <img src={ this.props.image } />
-        </div>
-        <div className={ styles.description }>
-          <h2>{ this.props.name }</h2>
-          <p>{ this.props.description }</p>
-        </div>
-        <div className={ styles.refferences }>
-          <a href={ this.props.github } className={ styles.github } target='_blank'>GitHub</a>
-          <a href={ this.props.www } className={ styles.www } target='_blank'>www</a>
-        </div>
-      </div>
-    )
-  }
+const Card = ({ image, name, description, github, www }) => (
+  <div className={ styles.card }>
+    <div className={ styles.image }>
+      <img src={ image } />
+    </div>
+    <div className={ styles.description }>
+      <h2>{ name }</h2>
+      <p>{ description }</p>
+    </div>
+    <div className={ styles.refferences }>
+      <a href={ github } className={ styles.github } target='_blank'>GitHub</a>
+      <a href={ www } className={ styles.www } target='_blank'>www</a>
+    </div>
+  </div>
+)
+
+Card.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  www: PropTypes.string.isRequired
 }
 
 export default Card

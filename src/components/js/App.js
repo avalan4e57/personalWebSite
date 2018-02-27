@@ -9,20 +9,16 @@ import Projects from './Projects.js'
 import Header from './Header.js'
 import Navigation from './Navigation.js'
 
-class App extends Component {
-  render() {
-    return(
-      <Router>
-        <div className='app'>
-          <Header />
-          <Navigation />
+const App = () => (
+  <Router>
+    <div className='app'>
+      <Header />
+      <Navigation />
 
-          <Route exact path='/' render={ () => <Home /> } />
-          <Route path='/projects' render={ () => <Projects /> } />
-        </div>
-      </Router>
-    )
-  }
-}
+      <Route exact path='/' render={ () => <Home /> } />
+      <Route path='/projects' render={ () => <Projects /> } />
+    </div>
+  </Router>
+)
 
 export default App

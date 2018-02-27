@@ -8,7 +8,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('./../img/', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('./../img/projects/', false, /\.(png|jpe?g|svg)$/));
 
 class Projects extends Component {
   constructor() {
