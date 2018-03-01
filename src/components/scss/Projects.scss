@@ -1,0 +1,23 @@
+@mixin background-fixed($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // background-attachment: fixed;
+}
+
+
+.projects {
+  // @include background-fixed('../img/projects.jpg');
+  // background-color: #081520;
+  // background-color: #EEEEEE;
+  color: #EBC2A5;
+  min-height: 100vh;
+  p {
+    margin: 0;
+    padding: 2em;
+  }
+  a:visited {
+    color: #b6b6b6;
+  }
+}

@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import styles from './../scss/Main.scss'
 import Card from './Card'
 import PropTypes from 'prop-types'
+import FlipMove from 'react-flip-move'
 
 const Main = ({ cards }) => (
-  <div className={ styles.container }>
+  <FlipMove className={ styles.container }>
     {
       cards.map((card, index) =>
         <div className={ styles.gridItem } key={ index }>
@@ -19,7 +20,7 @@ const Main = ({ cards }) => (
         </div>
       )
     }
-  </div>
+  </FlipMove>
 )
 
 Main.propTypes = {

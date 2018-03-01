@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import styles from './../scss/Navigation.scss'
 
 class Navigation extends Component {
@@ -43,8 +43,8 @@ class Navigation extends Component {
         <nav>
           <div id="nav-toggle" className={ styles.navMobile } onClick={ this.toggleMenu }><a href="#!"><span></span></a></div>
           <ul id="menu">
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/projects'>Pet Projects</Link></li>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>Pet Projects</a></li>
           </ul>
         </nav>
       </div>

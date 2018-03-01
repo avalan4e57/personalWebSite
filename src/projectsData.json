@@ -5,7 +5,8 @@
     "name": "PBWA",
     "description": "Some description",
     "github": "https://github.com/avalan4e57/PunkBeerWebApp",
-    "www": "https://pbwa.herokuapp.com/"
+    "www": "https://pbwa.herokuapp.com/",
+    "type": "reactRedux"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "name": "Gravity Turret",
     "description": "Some description",
     "github": "https://github.com/avalan4e57/gravity-turret",
-    "www": "https://gravity-turret.herokuapp.com/"
+    "www": "https://gravity-turret.herokuapp.com/",
+    "type": "noType"
 
   },
   {
@@ -22,6 +24,16 @@
     "name": "Personal Website (this project)",
     "description": "Some description",
     "github": "https://github.com/avalan4e57/personalWebSite",
-    "www": "https://ichernega.herokuapp.com/"
+    "www": "https://ichernega.herokuapp.com/",
+    "type": "reactRedux"
+  },
+  {
+    "id": 4,
+    "image": "TemplateConquer.png",
+    "name": "Template Conquer",
+    "description": "Some description",
+    "github": "https://github.com/avalan4e57/TemplateConquer",
+    "www": "not deployed",
+    "type": "bootstrap"
   }
 ]

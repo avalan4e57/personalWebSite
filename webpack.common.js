@@ -43,6 +43,6 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'herokuapp/public/assets')
+    path: path.resolve(__dirname, 'herokuapp/public')
   }
 }

@@ -1,0 +1,98 @@
+@mixin background-fixed($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // background-attachment: fixed;
+}
+.contact {
+  // @include background-fixed('../img/contact.jpg');
+  // background-size: 100vw 100vh;
+  height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  // input {
+  //   margin-bottom: 15px;
+  // }
+  .container {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    margin: 0 auto;
+    header {
+      // flex: 1 100%;
+      text-align: center;
+      h2 {
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px #333;
+      }
+      p {
+        background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+        border-radius: 5px;
+        color: #000;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 20px 15px;
+      }
+    }
+
+    .userInput {
+      // flex: 1 100%;
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      .inputs {
+        flex: 1 100%;
+        input {
+          width: 100%;
+          margin-bottom: 15px;
+          }
+        }
+      }
+      textarea {
+        flex: 1 100%;
+        resize: none;
+      }
+      input, textarea {
+        border-radius: 5px;
+        padding: 1.3em;
+        border: none;
+        background: rgba(242, 242, 242, 0.4);
+        color: #000;
+        &::placeholder {
+          color: #000;
+      }
+    }
+
+    .submitButton {
+      max-width: 10em;
+      background: #262628 none repeat scroll 0 0;
+      color: #fff;
+      margin-top: 20px;
+      padding: 10px 30px;
+      font-size: 18px;
+      border-radius:10px;
+      -webkit-transition: all 0.3s ease;
+              transition: all 0.3s ease;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .contact {
+    .container {
+      .userInput {
+        .inputs, textarea {
+          flex: 1 50%;
+        }
+        .inputs {
+          input {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
