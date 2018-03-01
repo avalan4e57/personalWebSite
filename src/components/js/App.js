@@ -8,7 +8,7 @@ import Home from './Home.js'
 import Projects from './Projects.js'
 import Header from './Header.js'
 import Navigation from './Navigation.js'
-import Contact from './Contact.js'
+import ContactForm from './containers/ContactForm.js'
 import ProjectFilter from './ProjectFilter.js'
 import VisibleProjects from './containers/VisibleProjects.js'
 
@@ -33,7 +33,7 @@ const App = () => (
   // <Router>
     <div className={ styles.app }>
       <div className={ styles.contacts }>
-        <a href='https://github.com/avalan4e57' className={ styles.github }><FontAwesomeIcon icon={faGithub} /></a>
+        <a href='https://github.com/avalan4e57' className={ styles.github } target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
         <a href='mailto:am.igor.chernega@gmail.com?subject=Mail_from_Our_Site' className={ styles.mail }><FontAwesomeIcon icon={faEnvelope} /></a>
       </div>
       {/* <Header /> */}
@@ -42,7 +42,7 @@ const App = () => (
       {/* <Projects /> */}
       {/* <ProjectFilter /> */}
       <VisibleProjects />
-      <Contact />
+      <ContactForm />
 
 
       {/* <Route exact path='/' render={ () => <Home /> } />
