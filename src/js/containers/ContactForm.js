@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Contact from '../Contact'
+import Contact from '../components/Contact'
 import {
   updateName,
   updateEmail,
@@ -33,6 +33,27 @@ const mapDispatchToProps = dispatch => {
     onBodyInput: (e) => {
       e.preventDefault()
       dispatch(updateBody(e.target.value))
+    },
+    onFormSubmit: (name, email, subject, body) => {
+      let url = 'http://localhost:3000/'
+      let data = {
+        name: name,
+        email: email,
+        subject: subject,
+        body: body
+      }
+      // console.log(data)
+      // let server = JSON.stringify(data)
+      // console.log(server)
+      fetch(url, {
+      method: 'POST', // or 'PUT'
+      body: JSON.stringify(data),
+      headers: new Headers({
+        'Content-Type': 'application/json'
+      })
+    }).then(res => res.json())
+    .catch(error => console.error('Error:', error))
+    .then(response => console.log('Success:', response));
     }
   }
 }

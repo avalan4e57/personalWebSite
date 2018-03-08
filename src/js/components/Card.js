@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from './../scss/Card.scss'
+import styles from '../../styles/Card.scss'
 import PropTypes from 'prop-types'
 
 const Card = ({ image, name, description, github, www }) => (

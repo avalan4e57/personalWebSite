@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import Projects from '../Projects'
-import projectsData from '../../../projectsData.json'
+import Projects from '../components/Projects'
+import projectsData from '../../projectsData.json'
 
 const getVisibleProjects = (projects, filter) => {
   switch (filter) {
@@ -30,7 +30,7 @@ let projects = projectsData.map(item => ({
   github: item.github,
   www: item.www,
   type: item.type
-}))
+})).sort((a, b) => a.id - b.id)
 
 const mapStateToProps = state => {
   return {

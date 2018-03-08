@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from './../scss/Main.scss'
+import styles from '../../styles/Main.scss'
 import Card from './Card'
 import PropTypes from 'prop-types'
 import FlipMove from 'react-flip-move'

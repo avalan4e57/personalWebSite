@@ -1,39 +1,39 @@
 [
   {
-    "id": 1,
+    "id": 2,
     "image": "PBWA.png",
     "name": "PBWA",
-    "description": "Some description",
+    "description": "Interaction with side API. All seems like front part for a web store",
     "github": "https://github.com/avalan4e57/PunkBeerWebApp",
     "www": "https://pbwa.herokuapp.com/",
     "type": "reactRedux"
   },
   {
-    "id": 2,
+    "id": 4,
     "image": "GravityTurret.png",
     "name": "Gravity Turret",
-    "description": "Some description",
+    "description": "Simulation of gravity force for a bullet",
     "github": "https://github.com/avalan4e57/gravity-turret",
     "www": "https://gravity-turret.herokuapp.com/",
     "type": "noType"
 
   },
   {
-    "id": 3,
+    "id": 1,
     "image": "PersonalWebsite.png",
-    "name": "Personal Website (this project)",
-    "description": "Some description",
+    "name": "Personal Website",
+    "description": "(this project)",
     "github": "https://github.com/avalan4e57/personalWebSite",
     "www": "https://ichernega.herokuapp.com/",
     "type": "reactRedux"
   },
   {
-    "id": 4,
+    "id": 3,
     "image": "TemplateConquer.png",
     "name": "Template Conquer",
-    "description": "Some description",
+    "description": "A template from .png file. And here I've used my own parallax effect code",
     "github": "https://github.com/avalan4e57/TemplateConquer",
-    "www": "not deployed",
+    "www": "https://templateconquer.herokuapp.com/",
     "type": "bootstrap"
   }
 ]

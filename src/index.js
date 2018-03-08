@@ -1,9 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
-import App from './components/js/App.js'
+import App from './js/components/App.js'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import personalWebsiteApp from './components/js/reducers'
+import personalWebsiteApp from './js/reducers'
 
 let store = createStore(personalWebsiteApp)
 

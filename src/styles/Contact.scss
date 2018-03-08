@@ -1,0 +1,193 @@
+// .contact {
+//   height: 100vh;
+//   padding-top: 80px;
+//   padding-bottom: 60px;
+//   .container {
+//     display: flex;
+//     flex-flow: column;
+//     width: 80%;
+//     margin: 0 auto;
+//     header {
+//       text-align: center;
+//       h2 {
+//         color: #fff;
+//         text-transform: capitalize;
+//         margin-bottom: 30px;
+//         text-shadow: 2px 2px #333;
+//       }
+//       p {
+//         background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+//         border-radius: 5px;
+//         color: #000;
+//         font-size: 16px;
+//         margin-bottom: 20px;
+//         padding: 20px 15px;
+//       }
+//     }
+//
+//     .userInput {
+//       display: flex;
+//       justify-content: center;
+//       flex-flow: row wrap;
+//       .inputs {
+//         flex: 1 100%;
+//         input {
+//           width: 100%;
+//           margin-bottom: 15px;
+//           }
+//         }
+//       }
+//       textarea {
+//         flex: 1 100%;
+//         resize: none;
+//         height: 14.2em;
+//       }
+//       input, textarea {
+//         border-radius: 5px;
+//         padding: 1.3em;
+//         border: none;
+//         background: rgba(242, 242, 242, 0.4);
+//         color: #000;
+//         &::placeholder {
+//           color: #000;
+//       }
+//     }
+//
+//     .submitButton {
+//       max-width: 10em;
+//       background: #262628 none repeat scroll 0 0;
+//       color: #fff;
+//       margin-top: 20px;
+//       padding: 10px 30px;
+//       font-size: 18px;
+//       border-radius:10px;
+//     }
+//   }
+// }
+//
+// @media all and (min-width: 768px) {
+//   .contact {
+//     .container {
+//       .userInput {
+//         .inputs, textarea {
+//           flex: 1 50%;
+//         }
+//         .inputs {
+//           input {
+//             width: 90%;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+.contact {
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 80%;
+    margin: 0 auto;
+    header {
+      text-align: center;
+      h2 {
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px #333;
+      }
+      p {
+        background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+        border-radius: 5px;
+        color: #000;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 20px 15px;
+      }
+    }
+
+    .userInput {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      .inputs {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 100%;
+                flex: 1 100%;
+        input {
+          width: 100%;
+          margin-bottom: 15px;
+          }
+        }
+      }
+      textarea {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 100%;
+                flex: 1 100%;
+        resize: none;
+        height: 14.2em;
+      }
+      input, textarea {
+        border-radius: 5px;
+        padding: 1.3em;
+        border: none;
+        background: rgba(242, 242, 242, 0.4);
+        color: #000;
+        &::-webkit-input-placeholder {
+          color: #000;
+      }
+        &:-ms-input-placeholder {
+          color: #000;
+      }
+        &::-ms-input-placeholder {
+          color: #000;
+      }
+        &::placeholder {
+          color: #000;
+      }
+    }
+
+    .submitButton {
+      max-width: 10em;
+      background: #262628 none repeat scroll 0 0;
+      color: #fff;
+      margin-top: 20px;
+      padding: 10px 30px;
+      font-size: 18px;
+      border-radius:10px;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .contact {
+    .container {
+      .userInput {
+        .inputs, textarea {
+          -webkit-box-flex: 1;
+              -ms-flex: 1 49%;
+                  flex: 1 49%;
+        }
+        .inputs {
+          input {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}

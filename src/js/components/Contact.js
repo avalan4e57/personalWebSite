@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from '../scss/Contact.scss'
+import styles from '../../styles/Contact.scss'
 import { Parallax } from 'react-parallax'
-import contactImg from '../img/contact.jpg'
+import contactImg from '../../img/contact.jpg'
 
 const Contact = ({
   formInputName,
@@ -12,13 +12,14 @@ const Contact = ({
   onEmailInput,
   onSubjectInput,
   onBodyInput,
+  onFormSubmit
 }) => (
   <Parallax strength={300} bgImage={ contactImg }>
   <div className={ styles.contact }>
     <div className={ styles.container }>
       <header>
         <h2>contact form</h2>
-        <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.</p>
+        <p>Thanks for your interest in my personal website and portfolio pet projects. Please use this form if you have any questions or if you want to hire me</p>
       </header>
       <section className={ styles.userInput }>
         <section className={ styles.inputs }>
@@ -28,7 +29,7 @@ const Contact = ({
         </section>
         <textarea name='message' rows='6' placeholder='Your message here...' value={ formInputBody } onChange={ onBodyInput } ></textarea>
       </section>
-      <button type='submit' className={ styles.submitButton }>Send</button>
+      <button onClick={ (e) => { e.preventDefault(); onFormSubmit(formInputName, formInputEmail, formInputSubject, formInputBody)} } type='submit' className={ styles.submitButton }>Send</button>
     </div>
   </div>
 </Parallax>

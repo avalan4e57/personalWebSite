@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import myPhoto from '../img/foto.jpg'
-import styles from '../scss/Home.scss'
+import myPhoto from '../../img/foto.jpg'
+import styles from '../../styles/Home.scss'
 import { Parallax } from 'react-parallax'
-import homeImg from '../img/home.jpg'
-// '../img/home.jpg'
+import homeImg from '../../img/home.jpg'
+
 const Home = () => (
   <Parallax strength={300} bgImage={ homeImg }>
-    {/* <div>Use the background component for custom elements</div> */}
     <div className={ styles.home } id='home'>
-      {/* <div className={ styles.ribbon }><span className={ styles.ribbonText }>Welcome</span></div> */}
       <img src={ myPhoto } alt='Profile photo' />
       <article>
         <header>
@@ -26,9 +24,6 @@ const Home = () => (
         </section>
       </article>
     </div>
-    {/* <Background className="custom-bg">
-      <img src={ homeImg } alt="fill murray" />
-    </Background> */}
   </Parallax>
 )
 
