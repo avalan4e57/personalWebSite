@@ -19,6 +19,7 @@ const Contact = ({
     <div className={ styles.container }>
       <header>
         <h2>contact form</h2>
+        <p className={ styles.sorry }>Sorry but nodemailer add-on doesn't work with Heroku. So please use <a href='mailto:am.igor.chernega@gmail.com?subject=Mail_from_Our_Site'>this</a> alias for now to contact me via email</p>
         <p>Thanks for your interest in my personal website and portfolio pet projects. Please use this form if you have any questions or if you want to hire me</p>
       </header>
       <section className={ styles.userInput }>

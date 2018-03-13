@@ -9,7 +9,7 @@
     "type": "reactRedux"
   },
   {
-    "id": 4,
+    "id": 5,
     "image": "GravityTurret.png",
     "name": "Gravity Turret",
     "description": "Simulation of gravity force for a bullet",
@@ -28,12 +28,21 @@
     "type": "reactRedux"
   },
   {
-    "id": 3,
+    "id": 4,
     "image": "TemplateConquer.png",
     "name": "Template Conquer",
     "description": "A template from .png file. And here I've used my own parallax effect code",
     "github": "https://github.com/avalan4e57/TemplateConquer",
     "www": "https://templateconquer.herokuapp.com/",
     "type": "bootstrap"
+  },
+  {
+    "id": 3,
+    "image": "AppStarter.png",
+    "name": "Template AppStarter",
+    "description": "A template from .png file. Built mainly with Flexbox",
+    "github": "https://github.com/avalan4e57/appstarter",
+    "www": "https://avalan4e57.github.io/",
+    "type": "noType"
   }
 ]

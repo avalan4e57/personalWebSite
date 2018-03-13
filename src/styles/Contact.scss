@@ -111,6 +111,10 @@
         margin-bottom: 20px;
         padding: 20px 15px;
       }
+      p.sorry {
+        font-size: 800;
+        background: yellow;
+      }
     }
 
     .userInput {
@@ -169,6 +173,7 @@
       padding: 10px 30px;
       font-size: 18px;
       border-radius:10px;
+      cursor: pointer;
     }
   }
 }
