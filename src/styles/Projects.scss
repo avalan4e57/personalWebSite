@@ -1,23 +1,31 @@
-@mixin background-fixed($url) {
-  background-image: url($url);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  // background-attachment: fixed;
-}
-
-
 .projects {
-  // @include background-fixed('../img/projects.jpg');
-  // background-color: #081520;
-  // background-color: #EEEEEE;
   color: #EBC2A5;
   min-height: 100vh;
-  p {
-    margin: 0;
-    padding: 2em;
+  background: #ffffff;
+  padding: 5em 0;
+  text-align: center;
+  .title {
+    color: #262A30;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-size: 1.4em;
   }
+  // display: flex;
+  // align-items: center;
+  // p {
+  //   margin: 0;
+  //   padding: 2em;
+  // }
   a:visited {
-    color: #b6b6b6;
+    color: #272A30;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .projects {
+    text-align: left;
+    .title {
+      margin-left: 5%;
+    }
   }
 }

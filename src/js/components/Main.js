@@ -16,6 +16,7 @@ const Main = ({ cards }) => (
             description={ card.description }
             github={ card.github }
             www={ card.www }
+            gradient={ card.gradient }
           />
         </div>
       )

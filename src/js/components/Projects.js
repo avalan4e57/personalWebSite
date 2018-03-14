@@ -7,12 +7,13 @@ import { Parallax } from 'react-parallax'
 import projectsImg from '../../img/projects.jpg'
 
 const Projects = ({ projects }) => (
-  <Parallax strength={300} bgImage={ projectsImg }>
+  // <Parallax strength={300} bgImage={ projectsImg }>
     <div className={ styles.projects }>
-      <ProjectFilter />
+      {/* <ProjectFilter /> */}
+      <h2 className={ styles.title }>My pet projects:</h2>
       <Main cards={ projects } />
     </div>
-  </Parallax>
+  // </Parallax>
 )
 
 export default Projects

@@ -29,7 +29,8 @@ let projects = projectsData.map(item => ({
   description: item.description,
   github: item.github,
   www: item.www,
-  type: item.type
+  type: item.type,
+  gradient: item.gradient
 })).sort((a, b) => a.id - b.id)
 
 const mapStateToProps = state => {

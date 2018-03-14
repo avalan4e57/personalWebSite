@@ -1,20 +1,24 @@
 .container {
+  align-self: center;
   display: flex;
   flex-flow: row wrap;
+  // align-items: center;
+  // justify-content: flex-start;
 
   .gridItem {
-    height: 45em;
+    // height: 45em;
     flex: 1 100%;
     display: flex;
-    align-items: flex-end;
+    // align-items: flex-end;
     margin-bottom: 2em;
+    justify-content: center;
   }
 }
 
 @media all and (min-width: 768px) {
   .container {
     .gridItem {
-      height: 20em;
+      // height: 20em;
       flex: 1 50%;
       max-width: 50%;
     }
@@ -24,7 +28,7 @@
 @media all and (min-width: 992px) {
   .container {
     .gridItem {
-      height: 20em;
+      // height: 20em;
     }
   }
 }
@@ -34,7 +38,7 @@
     .gridItem {
       flex: 1 33.33333%;
       max-width: 33.33333%;
-      height: 17em;
+      // height: 17em;
     }
   }
 }

@@ -6,7 +6,11 @@
     "description": "Interaction with side API. All seems like front part for a web store",
     "github": "https://github.com/avalan4e57/PunkBeerWebApp",
     "www": "https://pbwa.herokuapp.com/",
-    "type": "reactRedux"
+    "type": "reactRedux",
+    "gradient": {
+      "begin": "rgba(255,150,113,.8)",
+      "end": "rgba(249,248,113,.8)"
+    }
   },
   {
     "id": 5,
@@ -15,7 +19,11 @@
     "description": "Simulation of gravity force for a bullet",
     "github": "https://github.com/avalan4e57/gravity-turret",
     "www": "https://gravity-turret.herokuapp.com/",
-    "type": "noType"
+    "type": "noType",
+    "gradient": {
+      "begin": "rgba(75,68,83,.8)",
+      "end": "rgba(176,168,185,.8)"
+    }
 
   },
   {
@@ -25,7 +33,11 @@
     "description": "(this project)",
     "github": "https://github.com/avalan4e57/personalWebSite",
     "www": "https://ichernega.herokuapp.com/",
-    "type": "reactRedux"
+    "type": "reactRedux",
+    "gradient": {
+      "begin": "rgba(0,176,155,.8)",
+      "end": "rgba(150,201,61,.8)"
+    }
   },
   {
     "id": 4,
@@ -34,7 +46,11 @@
     "description": "A template from .png file. And here I've used my own parallax effect code",
     "github": "https://github.com/avalan4e57/TemplateConquer",
     "www": "https://templateconquer.herokuapp.com/",
-    "type": "bootstrap"
+    "type": "bootstrap",
+    "gradient": {
+      "begin": "rgba(240,80,83,.8)",
+      "end": "rgba(225,238,195,.8)"
+    }
   },
   {
     "id": 3,
@@ -43,6 +59,10 @@
     "description": "A template from .png file. Built mainly with Flexbox",
     "github": "https://github.com/avalan4e57/appstarter",
     "www": "https://avalan4e57.github.io/",
-    "type": "noType"
+    "type": "noType",
+    "gradient": {
+      "begin": "rgba(121,92,232,.8)",
+      "end": "rgba(58,186,245,.8)"
+    }
   }
 ]
