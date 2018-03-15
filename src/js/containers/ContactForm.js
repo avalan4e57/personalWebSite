@@ -35,18 +35,15 @@ const mapDispatchToProps = dispatch => {
       dispatch(updateBody(e.target.value))
     },
     onFormSubmit: (name, email, subject, body) => {
-      let url = 'http://localhost:3000/'
+      let url = window.location.href
       let data = {
         name: name,
         email: email,
         subject: subject,
         body: body
       }
-      // console.log(data)
-      // let server = JSON.stringify(data)
-      // console.log(server)
       fetch(url, {
-      method: 'POST', // or 'PUT'
+      method: 'POST',
       body: JSON.stringify(data),
       headers: new Headers({
         'Content-Type': 'application/json'

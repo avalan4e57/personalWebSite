@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from '../../styles/Contact.scss'
-import { Parallax } from 'react-parallax'
-import contactImg from '../../img/contact.jpg'
+// import contactImg from '../../img/contact.jpg'
 
 const Contact = ({
   formInputName,
@@ -14,7 +13,6 @@ const Contact = ({
   onBodyInput,
   onFormSubmit
 }) => (
-  // <Parallax strength={300} bgImage={ contactImg }>
   <div className={ styles.contact }>
     <div className={ styles.container }>
       <header>
@@ -33,7 +31,6 @@ const Contact = ({
       <button onClick={ (e) => { e.preventDefault(); onFormSubmit(formInputName, formInputEmail, formInputSubject, formInputBody)} } type='submit' className={ styles.submitButton }>Send</button>
     </div>
   </div>
-// </Parallax>
 )
 
 export default Contact
