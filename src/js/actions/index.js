@@ -33,6 +33,12 @@ export const updateBody = text => {
   }
 }
 
+export const clearInputs = () => {
+  return {
+    type: 'CLEAR_ALL'
+  }
+}
+
 export const VisibilityFilters = {
   SHOW_ALL: 'SHOW_ALL',
   SHOW_REACT_REDUX: 'SHOW_REACT_REDUX',

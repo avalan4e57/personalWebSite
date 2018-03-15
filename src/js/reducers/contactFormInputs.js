@@ -25,6 +25,14 @@ const contactFormInputs = (state = {
         ...state,
         body: action.text
       }
+    case 'CLEAR_ALL':
+      return {
+        ...state,
+        name: '',
+        email: '',
+        subject: '',
+        body: ''
+      }
     default:
       return state
   }

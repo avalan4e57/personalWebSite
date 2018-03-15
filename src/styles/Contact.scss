@@ -1,4 +1,15 @@
 .contact {
+  /* Change the white to any color ;) */
+  input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px #262A30 inset;
+  }
+  //   /*Change text in autofill textbox*/
+  input:-webkit-autofill {
+      -webkit-text-fill-color: white;
+  }
+  input:-webkit-autofill::placeholder {
+    -webkit-text-fill-color: #707376;
+  }
   min-height: 100vh;
   padding-top: 80px;
   padding-bottom: 60px;
@@ -56,8 +67,8 @@
         color: white;
         &::placeholder {
           color: #707376;
+        }
       }
-    }
 
     .submitButton {
       text-transform: uppercase;

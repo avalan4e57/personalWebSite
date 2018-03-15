@@ -4,7 +4,8 @@ import {
   updateName,
   updateEmail,
   updateSubject,
-  updateBody
+  updateBody,
+  clearInputs
 } from '../actions'
 
 const mapStateToProps = state => {
@@ -35,6 +36,7 @@ const mapDispatchToProps = dispatch => {
       dispatch(updateBody(e.target.value))
     },
     onFormSubmit: (name, email, subject, body) => {
+      dispatch(clearInputs())
       let url = window.location.href
       let data = {
         name: name,
